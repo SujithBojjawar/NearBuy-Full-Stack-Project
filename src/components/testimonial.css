@@ -1,0 +1,112 @@
+.testimonials-section {
+  background: linear-gradient(135deg, #5063f0, #3f51b5);
+  color: white;
+  padding: 60px 20px 80px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1.02px;
+  user-select: none;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  width: 280px;
+  padding: 30px 20px 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 40px rgba(66, 66, 140, 0.6);
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.testimonial-message {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  line-height: 1.4;
+  user-select: text;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #ffdd57;
+  user-select: text;
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #d1d1f7;
+  user-select: text;
+}
+
+.contact-support {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.contact-support h3 {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.contact-support p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  user-select: text;
+}
+
+.contact-support a {
+  color: #fff176;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-button {
+  background: #ffdd57;
+  border: none;
+  outline: none;
+  color: #3f51b5;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus {
+  background: #fbc02d;
+  outline: none;
+}

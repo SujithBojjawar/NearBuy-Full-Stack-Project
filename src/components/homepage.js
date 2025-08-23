@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './homepage.css';
 import { FaShoppingCart, FaHeadset, FaUserCircle, FaMapMarkerAlt } from 'react-icons/fa';
-import OffersSection from './offers.js'; 
-
+import OffersSection from './offers.js';
+import NearbyStoresSection from './nearbystores.js';
+import TestimonialsSection from './testimonial.js';
 const categories = [
   { name: 'Phones', icon: '📱' },
   { name: 'Electronics', icon: '💻' },
@@ -37,6 +38,10 @@ function HomePage() {
     }
   };
 
+  const handleExploreMoreClick = () => {
+    alert('Explore more items on our website!');
+  };
+
   return (
     <div className="homepage-bg">
       <header className="homepage-header">
@@ -44,7 +49,7 @@ function HomePage() {
           <span>Near</span>
           <span className="highlight">Buy</span>
         </div>
-        <form className="search-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="search-form" onSubmit={e => e.preventDefault()}>
           <input type="text" placeholder="Search for products, stores..." />
           <button type="submit">Search</button>
         </form>
@@ -63,7 +68,7 @@ function HomePage() {
 
       <div className="categories-label">Popular Categories</div>
       <div className="categories-list">
-        {categories.map((cat) => (
+        {categories.map(cat => (
           <div key={cat.name} className="category-card" tabIndex={0} aria-label={cat.name}>
             <span className="cat-icon">{cat.icon}</span>
             <span>{cat.name}</span>
@@ -83,21 +88,29 @@ function HomePage() {
         </div>
       </section>
 
-      <div className="offers-card-container">
-        <div
-          className="offers-card"
-          role="button"
-          tabIndex={0}
+      <div className="action-buttons-container">
+
+        <button
+          className="hot-offers-btn"
           onClick={handleOffersCardClick}
-          onKeyPress={(e) => { if (e.key === 'Enter') handleOffersCardClick(); }}
-          aria-label="Go to Offers section"
+          aria-label="View Hot Offers"
         >
-          <div className="offers-card-icon">🔥</div>
-          <div className="offers-card-text">Hot Offers</div>
-        </div>
+          🔥 Hot Offers
+        </button>
+
+        <button
+          className="explore-more-btn"
+          onClick={handleExploreMoreClick}
+          aria-label="Explore More Items"
+        >
+          🧐 Explore More
+        </button>
+
       </div>
 
       <OffersSection />
+      <NearbyStoresSection />
+      <TestimonialsSection />
     </div>
   );
 }
