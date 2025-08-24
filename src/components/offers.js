@@ -42,9 +42,9 @@ const products = [
     id: 5,
     name: "SkyBags Backpack",
     image: "/products/bag.jpeg",
-    price: 50,
-    discountPrice: 39,
-    offer: "22% OFF",
+    price: 5000,
+    discountPrice: 2500,
+    offer: "50% OFF",
   },
   {
     id: 6,

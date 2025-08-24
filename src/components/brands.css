@@ -1,0 +1,38 @@
+.brands-section {
+  margin: 52px auto 64px;
+  max-width: 1200px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.brands-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.brand-logo-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 76px;
+  filter: drop-shadow(0 3px 16px rgba(0,0,0,0.08));
+}
+
+.brand-logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.2s cubic-bezier(0.53,0.18,0.08,1);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(80, 99, 240, 0.06);
+  padding: 12px;
+}
+.brand-logo-img:hover,
+.brand-logo-img:focus {
+  transform: scale(1.13) rotate(-4deg);
+  box-shadow: 0 10px 32px rgba(0, 50, 255, 0.11);
+}

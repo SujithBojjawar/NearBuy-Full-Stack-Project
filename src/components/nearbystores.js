@@ -28,7 +28,7 @@ const nearbyStores = [
     description: "Large electronics outlet (TVs, laptops, mobiles, appliances).",
     rating: 3.6,
     reviews: 100,
-    image: "/store-images/croma1.jpg",
+    image: "/products/croma.jpg",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const nearbyStores = [
     description: "Electronics & home appliances.",
     rating: 4.3,
     reviews: 4300,
-    image: "/store-images/reliance.jpg",
+    image: "/products/reliance.jpg",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const nearbyStores = [
     description: "Retail + repair center for electronics & gadgets.",
     rating: 4.1,
     reviews: 3900,
-    image: "/store-images/croma2.jpg",
+    image: "/products/croma1.jpg",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const nearbyStores = [
     description: "Electronics, home entertainment, gadgets.",
     rating: 3.1,
     reviews: 10,
-    image: "/store-images/bajaj.jpg",
+    image: "/products/bajaj.jpg",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ const nearbyStores = [
     description: "Official Puma outlet (sports shoes, casual footwear).",
     rating: 4.3,
     reviews: 750,
-    image: "/store-images/puma.jpg",
+    image: "/products/puma.jpg",
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const nearbyStores = [
     description: "Official Nike store (running shoes, sneakers, performance wear).",
     rating: 4.7,
     reviews: 20,
-    image: "/store-images/nike.jpg",
+    image: "/products/nike.jpg",
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ const nearbyStores = [
     description: "One of India’s biggest bookstore chains (fiction, non-fiction, stationery).",
     rating: 4.4,
     reviews: 500,
-    image: "/store-images/crossword.jpg",
+    image: "/products/crossword.jpg",
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const nearbyStores = [
     description: "Huge bookstore (academic, novels, competitive exams, kids).",
     rating: 4.3,
     reviews: 700,
-    image: "/store-images/sapna.jpg",
+    image: "/products/sapnabookhouse.jpg",
   },
   {
     id: 9,
@@ -108,7 +108,7 @@ const nearbyStores = [
     description: "Hyderabad’s biggest mall; Reliance Digital, Croma, Footwear, Sapna Book House outlets.",
     rating: 4.5,
     reviews: 20000,
-    image: "/store-images/sarathcity.jpg",
+    image: "/products/sarathcitycapitalmall.jpg",
   },
   {
     id: 10,
@@ -118,7 +118,7 @@ const nearbyStores = [
     description: "Premium mall housing electronics, footwear, bookstores, lifestyle.",
     rating: 4.6,
     reviews: 50000,
-    image: "/store-images/inorbit.jpg",
+    image: "/products/inorbitmall.jpg",
   },
 ];
 

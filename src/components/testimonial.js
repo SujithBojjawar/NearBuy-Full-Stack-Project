@@ -7,21 +7,21 @@ const testimonials = [
     name: "Anita Sharma",
     role: "Satisfied Customer",
     message: "Fantastic platform! Found exactly what I needed nearby, with great offers.",
-    avatar: "/avatars/anita.jpg",
+    avatar: "/products/generated-image.png",
   },
   {
     id: 2,
     name: "Ravi Kumar",
     role: "Regular Shopper",
     message: "Easy to use and discover new stores. Support is very responsive.",
-    avatar: "/avatars/ravi.jpg",
+    avatar: "/products/generated-image (2).png",
   },
   {
     id: 3,
     name: "Sneha Patel",
     role: "Happy User",
     message: "I love how intuitive the website is. The deals save me a lot!",
-    avatar: "/avatars/sneha.jpg",
+    avatar: "/products/generated-image (1).png",
   },
 ];
 

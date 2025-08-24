@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './homepage.css';
 import { FaShoppingCart, FaHeadset, FaUserCircle, FaMapMarkerAlt } from 'react-icons/fa';
+import BrandSlider from './brands.js';
 import OffersSection from './offers.js';
 import NearbyStoresSection from './nearbystores.js';
 import TestimonialsSection from './testimonial.js';
@@ -107,7 +108,7 @@ function HomePage() {
         </button>
 
       </div>
-
+        <BrandSlider />
       <OffersSection />
       <NearbyStoresSection />
       <TestimonialsSection />
