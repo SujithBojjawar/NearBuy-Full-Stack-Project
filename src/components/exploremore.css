@@ -1,0 +1,78 @@
+.explore-modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(50, 55, 80, 0.75);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2.5px);
+}
+
+.explore-modal-content {
+  position: relative;
+  background: linear-gradient(135deg, #1ea6ff, #f358ff 80%);
+  border-radius: 32px;
+  box-shadow: 0 12px 64px #2226 0;
+  padding: 44px 30px 36px;
+  max-width: 90vw;
+  min-width: 350px;
+  color: #fff;
+  text-align: center;
+  overflow: visible;
+}
+
+.close-modal-btn {
+  position: absolute; right: 22px; top: 16px;
+  background: none; border: none; font-size: 2rem; color: #fff7;
+  cursor: pointer; outline: none;
+  transition: color 0.12s;
+}
+.close-modal-btn:hover { color: #fff; }
+
+.explore-modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.explore-modal-options {
+  display: flex; gap: 32px; justify-content: center; align-items: center;
+  flex-wrap: wrap;
+}
+.explore-option-card {
+  background: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  box-shadow: 0 2px 14px #0004;
+  padding: 32px 36px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex; align-items: center; gap: 11px;
+  border: solid 3px transparent;
+}
+.explore-option-card:active {
+  filter: brightness(1.2);
+}
+.explore-option-card.stores {
+  border-color: #1ea6ff88;
+}
+.explore-option-card.products {
+  border-color: #f358ff88;
+}
+
+@media (max-width: 700px) {
+  .explore-modal-content {
+    min-width: 230px;
+    padding: 24px 10px 24px;
+  }
+  .explore-modal-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .explore-option-card {
+    font-size: 1.1rem;
+    padding: 22px 14px;
+  }
+}

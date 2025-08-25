@@ -37,6 +37,11 @@
   align-items: center;
   gap: 6px;
 }
+.brand-logo {
+  height: 85px; 
+  width: auto;
+  user-select: none;
+}
 
 .brand .highlight {
   color: #0071e3; /* Apple Blue */

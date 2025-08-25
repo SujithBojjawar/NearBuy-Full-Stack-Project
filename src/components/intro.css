@@ -1,0 +1,20 @@
+.nearby-intro-backdrop {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #5063f0, #3f51b5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nearby-intro-location {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  user-select: none;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
