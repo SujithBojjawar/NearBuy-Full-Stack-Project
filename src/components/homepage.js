@@ -50,9 +50,9 @@ function HomePage() {
   const handleExploreChoice = (choice) => {
     setShowExploreModal(false);
     if (choice === "stores") {
-      navigate("/nearby-stores");  // Navigate to Nearby Stores Page
+      navigate("/nearby-stores");  
     } else if (choice === "products") {
-      navigate("/products");       // Replace with your products route if exists
+      navigate("/products");       
     }
   };
 

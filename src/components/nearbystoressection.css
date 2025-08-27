@@ -1,0 +1,223 @@
+
+.nearby-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0ecff 0%, #f8fcff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.nearby-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 15px rgba(54, 115, 253, 0.15);
+  backdrop-filter: saturate(180%) blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.nearby-logo {
+  height: 48px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+.nearby-logo:hover {
+  transform: scale(1.05);
+}
+
+.filter-btn {
+  background-color: #3673fd;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 12px #3673fd77;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.filter-btn:hover {
+  background-color: #285afc;
+  box-shadow: 0 8px 16px #285afcaa;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 1.6rem;
+  color: #3673fd;
+}
+.icon-btn {
+  cursor: pointer;
+  transition: color 0.25s;
+  user-select: none;
+}
+.icon-btn:hover {
+  color: #1a42b8;
+}
+
+.stores-grid-section {
+  padding: 30px 24px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.oscar-title {
+  font-size: 2.7rem;
+  color: #285afc;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px rgba(40, 90, 252, 0.15);
+}
+
+.stores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.store-card {
+  width: 220px;
+  background: linear-gradient(145deg, #f7faff, #e0ebff);
+  border-radius: 24px;
+  box-shadow:
+    6px 6px 16px rgba(54, 115, 253, 0.2),
+    inset 2px 2px 8px #ffffff80,
+    inset -2px -2px 8px #a7c1ff80;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  border: 3px solid transparent;
+  position: relative;
+}
+.store-card:hover {
+  border-color: #3673fd;
+  box-shadow:
+    8px 8px 24px rgba(54, 115, 253, 0.35),
+    inset 2px 2px 14px #ffffffcc,
+    inset -2px -2px 14px #79abffcc;
+  transform: translateY(-6px) scale(1.05);
+  z-index: 10;
+}
+
+.store-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  filter: brightness(1);
+  transition: filter 0.3s;
+  border-bottom: 1.5px solid #c9d2f0;
+}
+.store-card:hover .store-img {
+  filter: brightness(0.90);
+}
+
+.store-details {
+  width: 90%;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.store-details h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2640b2;
+  user-select: none;
+}
+
+.store-rating {
+  color: #f0be3a;
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.store-details p {
+  margin: 6px 0 8px;
+  font-size: 0.95rem;
+  color: #555;
+  user-select: text;
+}
+
+.store-distance {
+  font-size: 0.9rem;
+  color: #3673fd;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.store-tags {
+  margin: 8px 0 12px;
+}
+
+.store-tag {
+  display: inline-block;
+  padding: 3px 11px;
+  background: #d9e3ff;
+  color: #3673fd;
+  border-radius: 15px;
+  font-size: 0.87rem;
+  font-weight: 600;
+  margin: 0 5px 8px 5px;
+  user-select: none;
+}
+
+
+.store-btn {
+  background: linear-gradient(90deg, #3673fd, #48e4f0 80%);
+  box-shadow: 0 2px 12px #3673fd66;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 22px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  user-select: none;
+}
+.store-btn:active {
+  background: linear-gradient(90deg, #48e4f0, #3673fd 80%);
+}
+
+@media (max-width: 820px) {
+  .nearby-topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .left-section, .right-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .stores-grid {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
